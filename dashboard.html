@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Emergency Response & Traffic Management</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    #traffic-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://as2.ftcdn.net/v2/jpg/03/60/06/35/1000_F_360063564_6S8efcMBIzh7fYLv4n5xrfZ2nTLva4TW.jpg" alt="Logo" id="logo" />
+      <h1>Emergency Response & Traffic Management System</h1>
+    </div>
+    <div id="currentTime"></div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="live-map.html">Live Traffic Map</a></li>
+        <li><a href="alerts.html">Emergency Alerts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="dashboard">
+    <h2>Dashboard</h2>
+    <p>Real-time information on emergency services and traffic conditions.</p>
+    
+    <div class="data">
+      <div class="box">
+        <h3>Traffic Status</h3>
+        <p id="traffic-status">Loading...</p>
+        <div id="traffic-img-container">
+          <!-- Using local image -->
+          <img id="traffic-img" src="https://th.bing.com/th/id/OIP.yA_zcYuKyxxXhcTBWNUJOAHaE8?rs=1&pid=ImgDetMain " style="height:50px;width:50px"alt="Traffic Image" />
+
+        </div>
+      </div>
+      <div class="box">
+        <h3>Emergency Alerts</h3>
+        <p id="emergency-alerts">Be alert for emergencies.</p>
+        <div id="alert-img-container">
+          <img id="alert-img" src="https://wallpaperaccess.com/full/1551099.jpg" alt="Emergency Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Emergency Response & Traffic Management System</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

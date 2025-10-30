@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Traffic Map - Emergency Response & Traffic Management</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Include Leaflet.js for the map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://thumbs.dreamstime.com/z/detailed-world-map-globe-icons-navigation-symbols-62474354.jpg" alt="Logo" id="logo" />
+      <h1>Emergency Response & Traffic Management System</h1>
+    </div>
+    <div id="currentTime"></div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="live-map.html">Live Traffic Map</a></li>
+        <li><a href="alerts.html">Emergency Alerts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="live-map">
+    <h2>Live Traffic Map</h2>
+    <p>Here you can view real-time traffic data, including accidents and road congestion.</p>
+    <!-- Live Traffic Map -->
+    <div id="map" style="height: 500px; margin-top: 20px;"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Emergency Response & Traffic Management System</p>
+  </footer>
+  <script src="scripts.js"></script>
+  <!-- Leaflet.js Script -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
